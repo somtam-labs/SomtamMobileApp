@@ -22,9 +22,6 @@ const RoutesStack = () => {
   };
 
   const renderScreens = () => {
-    if (!isAuthenticated) {
-      return <Stack.Screen name="StartScreens" component={StartScreens} />;
-    }
 
     return <Stack.Screen name="StartScreens" component={StartScreens} />;
   };
