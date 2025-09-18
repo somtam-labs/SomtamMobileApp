@@ -15,6 +15,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import store from './src/redux/Store';
+import RoutesStack from './src/routes/RoutesStack';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -25,7 +26,7 @@ function App() {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        <AppContent />
+        <RoutesStack />
       </PersistGate>
     </Provider>
     </SafeAreaProvider>
