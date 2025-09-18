@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Onboarding from '../../pages/onboarding';
-
+import Signup from '../../pages/onboarding/Signup';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +21,7 @@ const moreCustomOptions ={ }
 const StartScreens = () => (
   <Stack.Navigator initialRouteName="Onboarding" screenOptions={options}>
     <Stack.Screen name="Onboarding" component={Onboarding}  />
+    <Stack.Screen name="Signup" component={Signup} />
 
   </Stack.Navigator>
   
